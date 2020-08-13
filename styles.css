@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: block;
+    background-color: darkslategray;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: beige;
+    font-size: 50px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.clock {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 35px solid #fff;
+    box-shadow: inset 0 0 30px grey;
+}
+
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgb(48, 47, 47);
+    transform: rotate(var(--rotation));
+}
+
+.clock .number .left-rotation {
+    --rotation: 0;
+    transform: rotate(var(--rotation));
+}
+
+.clock .number1 { --rotation: 30deg; }
+.clock .number2 { --rotation: 60deg; }
+.clock .number3 { --rotation: 90deg; }
+.clock .number4 { --rotation: 120deg; }
+.clock .number5 { --rotation: 150deg; }
+.clock .number6 { --rotation: 180deg; }
+.clock .number7 { --rotation: 210deg; }
+.clock .number8 { --rotation: 240deg; }
+.clock .number9 { --rotation: 270deg; }
+.clock .number10 { --rotation: 300deg; }
+.clock .number11 { --rotation: 330deg; }
+.clock .number12 { --rotation: 360deg; }
+
+.clock .number1 .left-rotation1 { transform: rotate(-30deg);}
+.clock .number2 .left-rotation2 { transform: rotate(-60deg);}
+.clock .number3 .left-rotation3 { transform: rotate(-90deg);}
+.clock .number4 .left-rotation4 { transform: rotate(-120deg);}
+.clock .number5 .left-rotation5 { transform: rotate(-150deg);}
+.clock .number6 .left-rotation6 { transform: rotate(-180deg);}
+.clock .number7 .left-rotation7 { transform: rotate(-210deg);}
+.clock .number8 .left-rotation8 { transform: rotate(-240deg);}
+.clock .number9 .left-rotation9 { transform: rotate(-270deg);}
+.clock .number10 .left-rotation10 { transform: rotate(-300deg);}
+.clock .number11 .left-rotation11 { transform: rotate(-330deg);}
+
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: grey;
+    z-index: 1000;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.hours,
+.minutes,
+.seconds {
+    position: absolute;
+}
+
+.hours-man,
+.minutes-man,
+.seconds-man {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hours-man::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 150px;
+    background: rgb(48, 47, 47);
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.minutes-man::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 200px;
+    background: rgb(48, 47, 47);
+    z-index: 15;
+    border-radius: 6px 6px 0 0;
+}
+
+.seconds-man::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 220px;
+    background: rgb(233, 99, 99);
+    z-index: 20;
+    border-radius: 6px 6px 0 0;
+}
+
+.footer {
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer ul li {
+    margin: 10px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li a {
+    color: beige;
+}
+
+.footer ul li a i {
+    font-size: 25px;
+}
