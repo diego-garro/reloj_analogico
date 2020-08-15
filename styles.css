@@ -114,7 +114,7 @@ section {
     content: '';
     position: absolute;
     width: 8px;
-    height: 150px;
+    height: 27vmin;
     background: rgb(48, 47, 47);
     z-index: 100;
     border-radius: 6px 6px 0 0;
@@ -124,7 +124,7 @@ section {
     content: '';
     position: absolute;
     width: 4px;
-    height: 200px;
+    height: 37vmin;
     background: rgb(48, 47, 47);
     z-index: 300;
     border-radius: 6px 6px 0 0;
@@ -134,7 +134,7 @@ section {
     content: '';
     position: absolute;
     width: 2px;
-    height: 220px;
+    height: 40vmin;
     background: rgb(233, 99, 99);
     z-index: 500;
     border-radius: 6px 6px 0 0;
