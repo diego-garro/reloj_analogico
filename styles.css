@@ -25,8 +25,10 @@ section {
 
 .clock {
     position: relative;
-    width: 500px;
-    height: 500px;
+    /* width: 500px;
+    height: 500px; */
+    width: 90vmin;
+    height: 90vmin;
     display: flex;
     background-color: beige;
     justify-content: center;
@@ -170,7 +172,7 @@ section {
     font-size: 25px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
 
     .body {
         height: 100vh;
@@ -183,9 +185,7 @@ section {
     }
 
     .clock {
-        width: 50vh;
-        height: 50vh;
-        border: 8px solid #fff;
+        border: 10px solid #fff;
         box-shadow: inset 0 0 10px grey;
     }
 
@@ -196,25 +196,27 @@ section {
 
     .number {
         font-size: 25px;
+        width: 100%;
+        height: 100%;
     }
 
     .number div[class^='left-rotation'] {
-        margin-top: 8px;
+        margin-top: 30px;
     }
 
     .hours-man::before {
         width: 3px;
-        height: 70px;
+        height: 120px;
     }
 
     .minutes-man::before {
         width: 2px;
-        height: 96px;
+        height: 175px;
     }
 
     .seconds-man::before {
         width: 1px;
-        height: 100px;
+        height: 195px;
     }
 
     .footer ul {
@@ -230,5 +232,22 @@ section {
     .footer ul li a i {
         text-align: center;
         font-size: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hours-man::before {
+        width: 3px;
+        height: 70px;
+    }
+
+    .minutes-man::before {
+        width: 2px;
+        height: 95px;
+    }
+
+    .seconds-man::before {
+        width: 1px;
+        height: 110px;
     }
 }
